@@ -7,9 +7,6 @@ const Counter = () => {
   const [count, setCount] = useState(5);
   return (
     <div>
-      {count ===10 ? <p>Count is too high</p>: <></>}
-      {count ===0 ? <p>Count is too low</p>: <></> }
-
       <button
         disabled={count === 0}
         onClick={() => setCount(count - 1)}>-</button>
@@ -19,6 +16,9 @@ const Counter = () => {
         onClick={() => setCount(count + 1)}
 
       >+</button>
+
+      {count ===10 ? <p><b>Count is too high</b></p>: <></>}
+      {count ===0 ? <p><b>Count is too low</b></p>: <></> }
     </div>
   )
 };
