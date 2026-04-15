@@ -11,11 +11,11 @@ const Counter = () => {
       {count ===0 ? <p>Count is too low</p>: <></> }
 
       <button
-        disabled={count === 2}
+        disabled={count === 0}
         onClick={() => setCount(count - 1)}>-</button>
       <output>{count}</output>
       <button
-        disabled={count === 11}
+        disabled={count === 10}
         onClick={() => setCount(count + 1)}
 
       >+</button>
