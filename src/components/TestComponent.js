@@ -1,5 +1,9 @@
 const TestComponent = () => {
-  return <p><b>Another test component</b></p>
+  return (
+    <>
+  <h1><b>Hello!</b></h1>
+  </>
+  )
 }
 
 export default TestComponent;
